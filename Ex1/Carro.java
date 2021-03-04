@@ -3,7 +3,7 @@ public class Carro {
     private String fabricante;
     private String modelo;
     private String placa;
-    int integridade = 10; //0 = destruído, 10 = 100% íntegro
+    int integridade;
     float preço_total;
     float preço_aluguel;
     int dias_aluguel;
