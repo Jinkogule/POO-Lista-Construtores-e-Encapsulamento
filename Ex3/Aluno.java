@@ -7,6 +7,10 @@ public class Aluno {
     private ArrayList<String> historico = new ArrayList();
     private ArrayList<Float> medias = new ArrayList();
 
+    public Aluno(String nome){
+        this.nome = nome;
+    }
+
     public void calculaCR(Disciplina disciplina, float nota){ //cálculo do CR de um aluno.
         this.notas_acumuladas += disciplina.getCarga_horaria()*nota;
         this.ch_acumulada += disciplina.getCarga_horaria();
@@ -26,9 +30,5 @@ public class Aluno {
 
     public void setMedias(float media) {
         this.medias.add(media);
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
     }
 }
