@@ -1,16 +1,25 @@
 public class Ex4_main {
     public static void main(String[] args) {
-        Data fimdomundo = new Data();
+
         System.out.println("Fim do mundo:");
-        System.out.println(fimdomundo.data("Dezembro", 21, 2012));
-        System.out.println(fimdomundo.data(21, 12, 2012));
-        System.out.println(fimdomundo.data(366, 2012));
+        Data fimdomundo1 = new Data(21, 12, 2012);
+        System.out.println(fimdomundo1.getData1());
+
+        Data fimdomundo2 = new Data("Dezembro", 21, 2012);
+        System.out.println(fimdomundo2.getData2());
+
+        Data fimdomundo3 = new Data(366, 2012);
+        System.out.println(fimdomundo3.getData3());
         System.out.println("");
 
         System.out.println("Morte de Napoleão:");
-        Data atentado = new Data();
-        System.out.println(fimdomundo.data("Maio", 5, 1821));
-        System.out.println(fimdomundo.data(5, 5, 1821));
-        System.out.println(fimdomundo.data(365, 1821));
+        Data mortenapo1 = new Data(5, 5, 1821);
+        System.out.println(mortenapo1.getData1());
+
+        Data mortenapo2 = new Data("Maio", 5, 1821);
+        System.out.println(mortenapo2.getData2());
+
+        Data mortenapo3 = new Data(365, 1821);
+        System.out.println(mortenapo3.getData3());
     }
 }
