@@ -7,6 +7,9 @@ public class Disciplina {
     private String horario;
     private String ementa;
 
+    public Disciplina(String nome){
+        this.nome = nome;
+    }
     public void setEmenta(String ementa){ //descrição da ementa de uma disciplina.
         this.ementa = ementa;
     };
@@ -21,9 +24,6 @@ public class Disciplina {
         return this.horario;
     };
 
-    public void setNome(String nome){
-        this.nome = nome;
-    }
     public String getNome(){
         return this.nome;
     }
