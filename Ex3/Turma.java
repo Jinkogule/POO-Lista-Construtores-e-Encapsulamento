@@ -3,7 +3,9 @@ public class Turma {
     private float media_da_turma;
     private float media_aluno;
     private String codigo;
-
+    public Turma(int quantidade_de_alunos){
+        this.quantidade_de_alunos = quantidade_de_alunos;
+    }
     public float getMediaDoAlunoNaTurma(Aluno aluno){ //media do aluno em relação ao resto da turma;
         return 10*this.getMedia_aluno()/getMedia_da_turma();
     };
@@ -20,6 +22,4 @@ public class Turma {
     public float getMedia_da_turma(){
       return this.media_da_turma;
     };
-
-
 }
